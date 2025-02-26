@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.kunkun.sh",
+  "name": "kunkun-ext-kill-process",
+  "version": "0.0.10",
+  "license": "MIT",
+  "type": "module",
+  "kunkun": {
+    "name": "Kill Process ",
+    "shortDescription": "Kill Process",
+    "longDescription": "Kill Process",
+    "identifier": "kunkun-ext-kill-process",
+    "permissions": [
+      "system-info:process",
+      "clipboard:write-text",
+      "shell:kill-any"
+    ],
+    "demoImages": [],
+    "icon": {
+      "type": "iconify",
+      "value": "material-symbols:terminal"
+    },
+    "customUiCmds": [],
+    "templateUiCmds": [
+      {
+        "name": "Kill Process",
+        "main": "dist/index.js",
+        "cmds": []
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "bun build.ts dev",
+    "build": "bun build.ts"
+  },
+  "dependencies": {
+    "@kksh/api": "0.1.5",
+    "i18next": "^23.15.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "./dist",
+    ".gitignore"
+  ]
+}
