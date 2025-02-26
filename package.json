@@ -3,6 +3,10 @@
   "name": "kunkun-ext-kill-process",
   "version": "0.0.10",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kunkunsh/kunkun-ext-kill-process"
+  },
   "type": "module",
   "kunkun": {
     "name": "Kill Process ",
@@ -14,7 +18,9 @@
       "clipboard:write-text",
       "shell:kill-any"
     ],
-    "demoImages": [],
+    "demoImages": [
+      "https://i.imgur.com/HggTZfj.png"
+    ],
     "icon": {
       "type": "iconify",
       "value": "material-symbols:terminal"
@@ -45,6 +51,7 @@
   },
   "files": [
     "./dist",
+    "README.md",
     ".gitignore"
   ]
 }
